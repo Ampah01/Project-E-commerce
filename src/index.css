@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.underline-animation::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 0%;
+    height: 2px;
+    background-color: #FFFFFF; 
+    transition: width 0.3s ease-in-out;
+    
+}
+
+.underline-animation:hover::after,
+.underline-animation:focus::after {
+    width: 100%;
+}
