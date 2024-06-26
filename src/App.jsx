@@ -1,7 +1,8 @@
 import "./App.css";
-import Header from "./Components/Header";
+import Navbar from "./Components/Navbar";
 import React, { useState, createContext, useEffect } from "react";
-import Home from "./Pages/Home";
+import Home from "./Pages/Home/Home";
+
 
 export const ThemeContext = createContext();
 
@@ -18,10 +19,10 @@ function App() {
     <ThemeContext.Provider value={{ theme, setTheme }}>
       <div
         className={`${theme} ${
-          theme === "dark" ? " bg-[#333333] text-white" : null
+          theme === "dark" ? "bg-[#333333] text-white" : null
         } min-h-[100vh]`}
       >
-        <Header />
+        <Navbar />
         <Home />
       </div>
     </ThemeContext.Provider>
