@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
-import logo from "./../assets/grocery.jpg";
-import max_logo from "./../assets/g_logo.jpg";
+import kingdom from "./../assets/Kingdom.jpg";
+import logo from "./../assets/sm_kingdom.jpg";
 import {
   HiOutlineShoppingCart,
   HiSun,
@@ -28,21 +28,20 @@ function Navbar() {
 
   return (
     <div
-      className="flex items-center top-0  fixed w-full justify-between mb-[140px] lg:py-4 md:p-4 text-slate-50 lg:px-[60px] shadow-md  z-50"
+      className="flex items-center top-0  fixed w-full justify-between lg:py-4 md:p-4 text-slate-50 lg:px-[60px] shadow-md  z-50"
       style={{
-        background: `linear-gradient(to right, #0F613F, #1F13A)`,
         backgroundColor: "#0F513A",
       }}
     >
       <div className="flex-shrink-0">
         <img
           className="hidden md:block md:w-[170px] mr-3 md:h-[60px] object-cover w-[80px]"
-          src={logo}
-          alt="Food logo"
+          src={kingdom}
+          alt="logo"
         />
         <img
-          className="md:hidden h-[40px] object-fill w-[20px] mt-2 ml-2 "
-          src={max_logo}
+          className="md:hidden h-[40px] object-cover w-[40px] mt-2 ml-2 "
+          src={logo}
           alt="Food logo"
         />
       </div>

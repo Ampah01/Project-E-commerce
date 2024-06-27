@@ -1,0 +1,305 @@
+{
+    "categories": [
+      {
+        "name": "Running",
+        "sneakers": [
+          {
+            "brand": "Nike",
+            "model": "Air Zoom Pegasus 38",
+            "color": "Black/White",
+            "price": 120,
+            "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+            "release_date": "2023-06-10",
+            "image": "https://cdn.runrepeat.com/storage/gallery/product_content/37184/nike-air-zoom-pegasus-38-in-the-lab-16406534-main.jpg",
+            "description": "Nike Air Zoom Pegasus 38 sneakers designed for high-speed running with responsive cushioning.",
+            "keywords": ["running", "responsive cushioning", "speed", "Nike"]
+          },
+          {
+            "brand": "Adidas",
+            "model": "Ultra Boost 22",
+            "color": "Grey/White",
+            "price": 180,
+            "sizes": ["US 6.5", "US 7.5", "US 8.5", "US 9.5", "US 10.5"],
+            "release_date": "2023-06-05",
+            "image": "https://www.poobienaidoos.co.za/wp-content/uploads/2022/08/GX6642_1_FOOTWEAR_Photography_Side-Lateral-Center-View_grey.jpg",
+            "description": "Adidas Ultra Boost 22 sneakers with Boost cushioning for energy return on long runs.",
+            "keywords": ["running", "Boost cushioning", "energy return", "Adidas"]
+          },
+          {
+            "brand": "New Balance",
+            "model": "Fresh Foam 1080v11",
+            "color": "Blue/Silver",
+            "price": 150,
+            "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+            "release_date": "2023-06-15",
+            "image": "https://www.theathletesfoot.co.nz/media/catalog/product/cache/30cc80f98b098b07373440d682818030/m/1/m1080b11_1.jpg",
+            "description": "New Balance Fresh Foam 1080v11 sneakers known for plush cushioning and a secure fit.",
+            "keywords": ["running", "Fresh Foam", "plush cushioning", "New Balance"]
+          },
+          {
+            "brand": "Brooks",
+            "model": "Ghost 14",
+            "color": "Black/Grey",
+            "price": 140,
+            "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+            "release_date": "2023-07-20",
+            "image": "https://images.ctfassets.net/xanbi6q061ft/1GRzfJ0DJbObmeTYtgRbIN/e67fd3a76c8ddc795add146ffe9df774/Brooks-Ghost-14-Review-FI.jpeg",
+            "description": "Brooks Ghost 14 sneakers designed for neutral runners, offering comfort and support.",
+            "keywords": ["running", "neutral", "comfort", "Brooks"]
+          },
+          {
+            "brand": "Asics",
+            "model": "Gel-Nimbus 23",
+            "color": "White/Blue",
+            "price": 160,
+            "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+            "release_date": "2023-08-01",
+            "image": "https://m.media-amazon.com/images/I/61isZcKQomL._AC_SL1200_.jpg",
+            "description": "Asics Gel-Nimbus 23 sneakers with advanced cushioning for long-distance running.",
+            "keywords": ["running", "Gel-Nimbus", "long-distance", "Asics"]
+          }
+        ]
+      },
+      {
+        "name": "Casual",
+        "sneakers": [
+          {
+            "brand": "Vans",
+            "model": "Old Skool",
+            "color": "Checkerboard",
+            "price": 65,
+            "sizes": ["US 6", "US 7", "US 8", "US 9", "US 10"],
+            "release_date": "2023-07-01",
+            "image": "https://en.afew-store.com/cdn/shop/collections/vans-old-skool_4964848a-2ee4-4b65-bf78-bb9c03292b74.jpg?v=1675693859&width=1200",
+            "description": "Vans Old Skool sneakers in the timeless checkerboard pattern.",
+            "keywords": ["casual", "streetwear", "Vans", "checkerboard"]
+          },
+          {
+            "brand": "Converse",
+            "model": "Chuck Taylor All Star",
+            "color": "Red",
+            "price": 55,
+            "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+            "release_date": "2023-07-05",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg_aen28Plo1pBfHOLa-F86g2yWNzKj604_A&s",
+            "description": "Classic Converse Chuck Taylor All Star sneakers in vibrant red.",
+            "keywords": ["casual", "Converse", "Chuck Taylor", "red"]
+          },
+          {
+            "brand": "Nike",
+            "model": "Blazer Low",
+            "color": "White/Black",
+            "price": 80,
+            "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+            "release_date": "2023-07-10",
+            "image": "https://def-live.cdn.aboutyou.cloud/images/e446f9a8cc59731d8c7bbf951cae1191.jpg?quality=75&height=832&width=596",
+            "description": "Nike Blazer Low sneakers for a minimalist look and everyday comfort.",
+            "keywords": ["casual", "minimalist", "everyday", "Nike"]
+          },
+          {
+            "brand": "Puma",
+            "model": "Suede Classic",
+            "color": "Black/White",
+            "price": 70,
+            "sizes": ["US 6.5", "US 7.5", "US 8.5", "US 9.5", "US 10.5"],
+            "release_date": "2023-07-15",
+            "image": "https://shopwice.com/wp-content/uploads/2022/09/Wine-Puma-Suede-Classic-1.webp",
+            "description": "Puma Suede Classic sneakers with a timeless design and suede upper.",
+            "keywords": ["casual", "timeless design", "suede", "Puma"]
+          },
+          {
+            "brand": "Adidas",
+            "model": "Stan Smith",
+            "color": "White/Green",
+            "price": 90,
+            "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+            "release_date": "2023-07-20",
+            "image": "https://static.ftshp.digital/img/p/9/7/4/6/9/8/974698-full_product.jpg",
+            "description": "Adidas Stan Smith sneakers known for their clean, classic style.",
+            "keywords": ["casual", "clean style", "classic", "Adidas"]
+          }
+        ]
+      },
+      {
+        "name": "Basketball",
+        "sneakers": [
+          {
+            "brand": "Jordan",
+            "model": "Air Jordan 1 Retro High",
+            "color": "Black/Red",
+            "price": 170,
+            "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+            "release_date": "2023-06-30",
+            "image": "https://m.media-amazon.com/images/I/51oVsn8KP0L._AC_UY900_.jpg",
+            "description": "Air Jordan 1 Retro High sneakers paying homage to the original with premium materials.",
+            "keywords": ["basketball", "Air Jordan", "retro", "premium materials"]
+          },
+          {
+            "brand": "Nike",
+            "model": "LeBron 19",
+            "color": "Blue/Gold",
+            "price": 200,
+            "sizes": ["US 8", "US 9", "US 10", "US 11", "US 12"],
+            "release_date": "2023-07-10",
+            "image": "https://static.nike.com/a/images/t_prod_ss/w_960,c_limit,f_auto/67cb617a-ae06-4127-b618-21fffe06e637/lebron-19-the-map-dq7548-600-release-date.jpg",
+            "description": "Nike LeBron 19 sneakers designed for LeBron James' power and speed on the court.",
+            "keywords": ["basketball", "LeBron James", "power", "speed"]
+          },
+          {
+            "brand": "Under Armour",
+            "model": "Curry 8",
+            "color": "White/Blue",
+            "price": 160,
+            "sizes": ["US 8", "US 9", "US 10", "US 11", "US 12"],
+            "release_date": "2023-07-15",
+            "image": "https://i.ebayimg.com/images/g/k7IAAOSwquJi6Wjb/s-l1600.jpg",
+            "description": "Under Armour Curry 8 sneakers with responsive cushioning and traction for sharp cuts.",
+            "keywords": ["basketball", "Under Armour", "Curry", "responsive cushioning"]
+          },
+          {
+            "brand": "Adidas",
+            "model": "Dame 8",
+            "color": "Black/White",
+            "price": 150,
+            "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+            "release_date": "2023-07-20",
+            "image": "https://cdn.sportshop.com/catalog/product/559/559/1/8/180887_1.jpg",
+            "description": "Adidas Dame 8 sneakers inspired by Damian Lillard's explosive playing style.",
+            "keywords": ["basketball", "Adidas", "Dame", "explosive"]
+          },
+          {
+            "brand": "Puma",
+            "model": "Clyde All-Pro",
+            "color": "Black/Gold",
+            "price": 140,
+            "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+            "release_date": "2023-07-25",
+            "image": "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2021%2F04%2Fpuma-clyde-all-pro-coast-2-coast-lakers-boston-celtics-01.jpg?cbr=1&q=90",
+            "description": "Puma Clyde All-Pro basketball sneakers known for style and performance.",
+            "keywords": ["basketball", "Puma", "Clyde", "style"]
+          }
+        ]
+      },
+      {
+        "name": "Hiking",
+        "sneakers": [
+          {
+            "brand": "Salomon",
+            "model": "X Ultra 4 GTX",
+            "color": "Black/Grey",
+            "price": 180,
+            "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+            "release_date": "2023-08-01",
+            "image": "https://dsev9ziwjq6qk.cloudfront.net/media/catalog/product/cache/5/image/1022x1131/9df78eab33525d08d6e5fb8d27136e95/c/a/cartware_3dpicture_egPw6M.jpg",
+            "description": "Salomon X Ultra 4 GTX hiking sneakers with GORE-TEX waterproof protection.",
+            "keywords": ["hiking", "trail", "GORE-TEX", "Salomon"]
+          },
+          {
+            "brand": "Merrell",
+            "model": "Moab 2 Vent",
+            "color": "Brown",
+            "price": 120,
+            "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+            "release_date": "2023-07-15",
+            "image": "https://i.ebayimg.com/images/g/6XwAAOSwukhkvqsR/s-l1200.webp",
+            "description": "Merrell Moab 2 Vent hiking sneakers with breathable mesh and Vibram traction.",
+            "keywords": ["hiking", "Vibram", "breathable", "Merrell"]
+          },
+          {
+            "brand": "Keen",
+            "model": "Targhee III Waterproof",
+            "color": "Green/Brown",
+            "price": 140,
+            "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+            "release_date": "2023-07-20",
+            "image": "https://images.bauerhosting.com/affiliates/sites/2/2024/02/7-1.jpg?auto=format&w=1440&q=80",
+            "description": "Keen Targhee III Waterproof hiking sneakers for all-terrain exploration.",
+            "keywords": ["hiking", "waterproof", "Keen", "all-terrain"]
+          },
+          {
+            "brand": "Columbia",
+            "model": "Newton Ridge Plus II",
+            "color": "Black",
+            "price": 110,
+            "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+            "release_date": "2023-07-25",
+            "image": "https://shoeclub.com/cdn/shop/products/Newtonridge_black_1.jpg?v=1621395709",
+            "description": "Columbia Newton Ridge Plus II hiking sneakers with Omni-Grip traction and waterproofing.",
+            "keywords": ["hiking", "Omni-Grip", "waterproof", "Columbia"]
+          },
+          {
+            "brand": "The North Face",
+            "model": "Ultra 111 Waterproof",
+            "color": "Grey/Blue",
+            "price": 160,
+            "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+            "release_date": "2023-08-01",
+            "image": "https://www.kickscrew.com/cdn/shop/files/1_92d05fca-1fca-4f59-a452-4546bf06d55d_540x.jpg?v=1715657014",
+            "description": "The North Face Ultra 111 Waterproof hiking sneakers for wet and rugged trails.",
+            "keywords": ["hiking", "waterproof", "The North Face", "rugged"]
+          }
+        ]
+      },
+      {
+        "name": "Skateboarding",
+        "sneakers": [
+          {
+            "brand": "Nike SB",
+            "model": "SB Blazer Low",
+            "color": "Black/White",
+            "price": 85,
+            "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+            "release_date": "2023-07-20",
+            "image": "https://example.com/nike_sb_blazer_low.jpg",
+            "description": "Nike SB Blazer Low skateboarding sneakers with durable suede and Zoom Air cushioning.",
+            "keywords": ["skateboarding", "Nike SB", "suede", "Zoom Air"]
+          },
+          {
+            "brand": "Vans",
+            "model": "Sk8-Hi",
+            "color": "Black/White",
+            "price": 75,
+            "sizes": ["US 6", "US 7", "US 8", "US 9", "US 10"],
+            "release_date": "2023-07-25",
+            "image": "https://rollersnakes.co.uk/cdn/shop/files/vans-sk8-hi-38-dx-high-top-shoes-loden-green-02.jpg?v=1710927038&width=1200",
+            "description": "Vans Sk8-Hi skateboarding sneakers featuring padded collars and signature waffle outsoles.",
+            "keywords": ["skateboarding", "Vans", "padded collars", "waffle outsoles"]
+          },
+          {
+            "brand": "Adidas Skateboarding",
+            "model": "Busenitz Pro",
+            "color": "Navy/Gum",
+            "price": 90,
+            "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+            "release_date": "2023-08-01",
+            "image": "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2013%2F04%2Fadidas-skateboarding-busenitz-pro-white-1.jpg?cbr=1&q=90",
+            "description": "Adidas Skateboarding Busenitz Pro sneakers designed with Dennis Busenitz's signature style.",
+            "keywords": ["skateboarding", "Adidas", "Busenitz Pro", "signature style"]
+          },
+          {
+            "brand": "Etnies",
+            "model": "Marana Michelin",
+            "color": "Black/Grey/Red",
+            "price": 80,
+            "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+            "release_date": "2023-08-05",
+            "image": "https://welcomesk8.com/cdn/shop/products/etnies-marana-red-gum-03_ce1d5615-731e-4b24-a158-04bdb25a04ef_1200x1200.jpg?v=1652441061",
+            "description": "Etnies Marana Michelin skateboarding sneakers with durable Michelin rubber outsoles.",
+            "keywords": ["skateboarding", "Etnies", "Michelin rubber", "durable"]
+          },
+          {
+            "brand": "DC Shoes",
+            "model": "Court Graffik",
+            "color": "White/Black",
+            "price": 70,
+            "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+            "release_date": "2023-08-10",
+            "image": "https://img01.ztat.net/article/spp-media-p1/13bdb0e755104375befcd830031c17d3/2152209340014b89aaabb90abe0c2cf1.jpg?imwidth=1800&filter=packshot",
+            "description": "DC Shoes Court Graffik skateboarding sneakers with DC's signature pill pattern tread.",
+            "keywords": ["skateboarding", "DC Shoes", "pill pattern tread", "signature"]
+          }
+        ]
+      }
+    ]
+  }
+  

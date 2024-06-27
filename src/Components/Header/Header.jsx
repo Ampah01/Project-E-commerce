@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import background_4 from "../../assets/background_4.jpg";
+import background_1 from "../../assets/background_1.jpg";
 import background_2 from "../../assets/background_2.jpg";
 import background_3 from "../../assets/background_3.jpg";
 
@@ -21,14 +21,14 @@ function Header() {
   };
 
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden md:mt-[90px]">
       <Slider {...settings}>
         
-        <div key="slide1" className="relative h-[90vh] md:h-[40vw] w-full md:w-4/5 rounded-lg overflow-hidden">
-          <img src={background_4} alt="Slide 1" className="object-cover w-full h-full" />
+        <div key="slide1" className="relative h-[90vh] md:h-[40vw] w-full md:w-4/5 rounded-sm overflow-hidden">
+          <img src={background_1} alt="Slide 1" className="object-cover w-full h-full" />
           <div className="absolute inset-0 bg-black opacity-75 flex flex-col md:justify-end justify-center items-center text-center text-white p-4">
             <h1 className="text-3xl md:text-5xl font-bold tracking-tighter mb-4">
-              Get your groceries at <span className="text-green-500">grocery</span>
+              Get your sneakers at our <span className="text-green-500">kingdom</span>
             </h1>
             <p className="text-lg md:text-xl mb-6 md:w-[50%]">
               Your destination for fresh produce and pantry essentials. Discover quality ingredients sourced locally and globally. Enjoy fast delivery and elevate your culinary experience with us today!
@@ -40,11 +40,11 @@ function Header() {
         </div>
 
         
-        <div key="slide2" className="relative h-[90vh] md:h-[40vw] w-full md:w-4/5 rounded-lg overflow-hidden">
+        <div key="slide2" className="relative h-[90vh] md:h-[40vw] w-full md:w-4/5 rounded-sm overflow-hidden">
           <img src={background_2} alt="Slide 2" className="object-cover w-full h-full" />
           <div className="absolute inset-0 bg-black opacity-75 flex flex-col md:justify-end justify-center items-center text-center text-white p-4">
             <h1 className="text-3xl md:text-5xl font-bold tracking-tighter mb-4">
-              Purely Fresh at <span className="text-green-500">grocery</span>
+            Your <span className="text-green-500">Sneaker</span> Journey Starts Here
             </h1>
             <p className="text-lg md:text-xl mb-6 md:w-[50%]">
               Your destination for fresh produce and pantry essentials. Discover quality ingredients sourced locally and globally. Enjoy fast delivery and elevate your culinary experience with us today!
@@ -56,11 +56,11 @@ function Header() {
         </div>
 
         
-        <div key="slide3" className="relative h-[90vh] md:h-[40vw] w-full md:w-4/5 rounded-lg overflow-hidden">
+        <div key="slide3" className="relative h-[90vh] md:h-[40vw] w-full md:w-4/5 rounded-sm overflow-hidden">
           <img src={background_3} alt="Slide 3" className="object-cover w-full h-full" />
           <div className="absolute inset-0 bg-black opacity-75 flex flex-col md:justify-end justify-center items-center text-center text-white p-4">
             <h1 className="text-3xl md:text-5xl font-bold tracking-tighter mb-4">
-              Purely Fresh at <span className="text-green-500">grocery</span>
+            Discover Your Perfect <span className="text-green-500">Sneaker</span> Match 
             </h1>
             <p className="text-lg md:text-xl mb-6 md:w-[50%]">
               Your destination for fresh produce and pantry essentials. Discover quality ingredients sourced locally and globally. Enjoy fast delivery and elevate your culinary experience with us today!
