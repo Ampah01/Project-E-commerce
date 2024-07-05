@@ -43,7 +43,7 @@ function Header() {
               and everyday elegance. Walk with confidence, run with excellence
             </p>
             <button className="px-4 py-2 md:mb-8 bg-green-500 text-white rounded-md hover:bg-green-700 transition-all duration-300">
-              View groceries
+              View sneakers
             </button>
           </div>
         </div>
@@ -68,7 +68,7 @@ function Header() {
               your look. Comfort and fashion, redefined
             </p>
             <button className="px-4 py-2 md:mb-8 bg-green-500 text-white rounded-md hover:bg-green-700 transition-all duration-300">
-              View groceries
+              View sneakers
             </button>
           </div>
         </div>
@@ -94,7 +94,7 @@ function Header() {
               comfort
             </p>
             <button className="px-4 py-2 md:mb-8 bg-green-500 text-white rounded-md hover:bg-green-700 transition-all duration-300">
-              View groceries
+              View sneakers
             </button>
           </div>
         </div>
