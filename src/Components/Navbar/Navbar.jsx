@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
-import kingdom from "./../assets/Kingdom.jpg";
-import logo from "./../assets/sm_kingdom.jpg";
+import kingdom from "../../assets/Kingdom.jpg";
+import logo from "../../assets/sm_kingdom.jpg";
 import {
   HiOutlineShoppingCart,
   HiSun,
@@ -9,7 +9,7 @@ import {
   HiMenu,
   HiX,
 } from "react-icons/hi";
-import { ThemeContext } from "../App";
+import { ThemeContext } from "../../App";
 
 function Navbar() {
   const [active, setActive] = useState("home");
@@ -110,10 +110,10 @@ function Navbar() {
       </div>
 
       <div className="flex items-center ">
-        <div className="relative px-1 z-10">
+        <div className="relative px-2 z-10">
           <input
             type="text"
-            className={`w-full p-1 rounded-full dark:bg-transparent outline-none px-2 ${
+            className={`w-full p-1 rounded-full dark:bg-transparent outline-none px-4 ${
               theme === "dark"
                 ? "text-white bg-[#333333]"
                 : "text-gray-700 bg-slate-100"

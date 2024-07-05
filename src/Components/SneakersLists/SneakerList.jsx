@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function SneakerCategory({ data }) {
+function SneakerList({ data }) {
   const [selectedSneaker, setSelectedSneaker] = useState(null);
 
   const allSneakers = Array.isArray(data.categories)
@@ -8,7 +8,7 @@ function SneakerCategory({ data }) {
     : [];
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto lg:p-4 p-1">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {allSneakers.map((sneaker) => (
           <div
@@ -17,7 +17,7 @@ function SneakerCategory({ data }) {
           >
             <div onClick={() => setSelectedSneaker(sneaker)}>
               <div
-                className="card-image bg-contain bg-center h-45"
+                className="card-image bg-contain bg-center h-40"
                 style={{ backgroundImage: `url(${sneaker.image})` }}
               ></div>
               <div className="px-4 py-2">
@@ -102,7 +102,7 @@ function SneakerCategory({ data }) {
               </div>
             </div>
 
-            <div className="px-2 py-2">
+            <div className="px-2 py-2 mt-2">
               <button className="custom-button text-sm py-2 px-4 rounded-full w-full bg-green-600 hover:bg-green-700 text-white focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 mb-2">
                 Add to Cart
               </button>
@@ -117,8 +117,8 @@ function SneakerCategory({ data }) {
             <img
               src={selectedSneaker.image}
               alt={selectedSneaker.model}
-              className="rounded-lg mb-2 object-contain"
-              style={{ width: "300px", height: "300px" }}
+              className="rounded-lg mb-2 bg-contain bg-center"
+              style={{ width: "100%", height: "300px" }}
             />
             <p className="text-lg font-bold bg-green-800 text-white py-2 px-4 rounded-md w-20 float-right">
               ${selectedSneaker.price}
@@ -139,4 +139,4 @@ function SneakerCategory({ data }) {
   );
 }
 
-export default SneakerCategory;
+export default SneakerList;

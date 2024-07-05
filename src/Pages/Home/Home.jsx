@@ -1,15 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Header from "../../Components/Header/Header";
-/* import SneakersCard from "../../Components/All_Sneakers/SneakersCard";  */
-import SneakerCategory from "../../Components/Sneakers_cartegory/SneakerCategory";
+import SneakerList from "../../Components/SneakersLists/SneakerList";
 import data from "../../../Products/sneakerproducts.json";
 import Footer from "../../Components/Footer/Footer";
+import sneakerCaty from "../../../Products/Categories.json";
+import SneakerCategory from "../../Components/SneakerCategory.jsx/SneakerCategory";
 
 function Home() {
   return (
     <div>
       <Header />
-      <SneakerCategory data={data} />
+      <SneakerCategory sneakerCaty = {sneakerCaty}/>
+      <SneakerList data={data} />
       <Footer />
     </div>
   );
