@@ -17,7 +17,7 @@ function SneakerList({ data }) {
           >
             <div onClick={() => setSelectedSneaker(sneaker)}>
               <div
-                className="card-image bg-contain bg-center h-40"
+                className="card-image bg-contain bg-center h-4"
                 style={{ backgroundImage: `url(${sneaker.image})` }}
               ></div>
               <div className="px-4 py-2">

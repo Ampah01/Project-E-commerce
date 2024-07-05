@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-function SneakerCategory({ sneakerCaty }) {
-  const [selectedCategory, setSelectedCategory] = useState(sneakerCaty.categories[0]);
+function SneakerCategory({ data }) {
+  
+ 
+  const [selectedCategory, setSelectedCategory] = useState(data.categories[0]);
 
   const handleCategorySelect = (category) => {
     setSelectedCategory(category);
@@ -14,7 +16,7 @@ function SneakerCategory({ sneakerCaty }) {
         Our Categories
       </h3>
       <div className="relative z-10 flex flex-wrap justify-center gap-8 lg:space-x-10 md:space-x-4">
-        {sneakerCaty.categories.map((category, index) => (
+        {data.categories.map((category, index) => (
           <motion.div
             key={index}
             className={`text-center cursor-pointer w-30 p-2 rounded-lg overflow-hidden shadow-md ${
@@ -36,6 +38,8 @@ function SneakerCategory({ sneakerCaty }) {
           </motion.div>
         ))}
       </div>
+     
+    
     </div>
   );
 }

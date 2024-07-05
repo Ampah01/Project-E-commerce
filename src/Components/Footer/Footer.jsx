@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-      <footer className="bg-[#0F513A] text-white py-8">
+      <footer className="bg-[#0F513A] text-white py-8 mt-14">
         <div className="container mx-auto px-6 lg:px-8 flex flex-col lg:flex-row justify-between items-center space-y-6 lg:space-y-0">
           <div className="text-center lg:text-left">
             <h5 className="text-xl font-bold">Kicks Kingdom</h5>
