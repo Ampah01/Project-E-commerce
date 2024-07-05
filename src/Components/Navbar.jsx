@@ -15,6 +15,11 @@ function Navbar() {
   const [active, setActive] = useState("home");
   const { theme, setTheme } = useContext(ThemeContext);
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [cartQuantity, setCartQuantity] = useState(0);
+
+  const handleQuantity = () => {
+    setCartQuantity(c => c + 1)
+  }
 
   const toggleTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
@@ -74,7 +79,7 @@ function Navbar() {
             }`}
             onClick={() => setActive("about")}
           >
-            About
+            About us
           </li>
           <li
             className={`text-white cursor-pointer font-semibold underline-animation relative transition duration-300 ease-in-out ${
@@ -120,10 +125,10 @@ function Navbar() {
           </button>
         </div>
 
-        <HiOutlineShoppingCart className="text-slate-50 lg:text-[38px] text-[35px] cursor-pointer ml-4" />
+        <HiOutlineShoppingCart className="text-slate-50 lg:text-[32px] text-[35px] cursor-pointer ml-4" />
 
         <div className="bg-green-700 rounded-full text-white text-xs w-5 h-5 flex items-center justify-center ml-[-16px] -mt-3">
-          0
+          {cartQuantity}
         </div>
 
         <div className="px-2">

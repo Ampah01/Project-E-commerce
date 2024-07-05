@@ -1,0 +1,21 @@
+{
+    "categories": [
+      {
+        "name": "Running",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcI2Ex0IGJynxvJBJI6WQVRDykT9yvHZJjdg&s"
+      },
+      {
+        "name": "Basketball",
+        "image": "https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_xy_center%2Cq_auto:good%2Cw_1200%2Cx_1999%2Cy_1912/MTkzNDE5NTc4NjgyOTEwNjI3/usatsi_11836411.jpg"
+      },
+      {
+        "name": "Casual",
+        "image": "https://gh.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/24/237711/1.jpg?7285"
+      },
+      {
+        "name": "Hiking",
+        "image": "https://c02.purpledshub.com/uploads/sites/47/2023/03/HokaAnacapaLow11-58-36SNY0042-62b34b7-1.jpg?webp=1&w=1200"
+      }
+    ]
+  }
+  

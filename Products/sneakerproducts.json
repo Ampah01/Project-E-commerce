@@ -35,7 +35,7 @@
           "price": 150,
           "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
           "release_date": "2023-06-15",
-          "image": "https://www.theathletesfoot.co.nz/media/catalog/product/cache/30cc80f98b098b07373440d682818030/m/1/m1080b11_1.jpg",
+          "image": "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2021%2F02%2Fnew-balance-running-sneakers-1080v11-TW.jpg?w=960&cbr=1&q=90&fit=max",
           "description": "New Balance Fresh Foam 1080v11 sneakers known for plush cushioning and a secure fit.",
           "keywords": [
             "running",
@@ -52,7 +52,7 @@
           "price": 140,
           "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
           "release_date": "2023-07-20",
-          "image": "https://images.ctfassets.net/xanbi6q061ft/1GRzfJ0DJbObmeTYtgRbIN/e67fd3a76c8ddc795add146ffe9df774/Brooks-Ghost-14-Review-FI.jpeg",
+          "image": "https://i.ebayimg.com/images/g/ECwAAOSwoSRiUvmr/s-l1200.webp",
           "description": "Brooks Ghost 14 sneakers designed for neutral runners, offering comfort and support.",
           "keywords": ["running", "neutral", "comfort", "Brooks"]
         },
@@ -64,7 +64,7 @@
           "price": 160,
           "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
           "release_date": "2023-08-01",
-          "image": "https://m.media-amazon.com/images/I/61isZcKQomL._AC_SL1200_.jpg",
+          "image": "https://racketlon.co.za/20926-large_default/asics-gel-nimbus-23-ladies-smoke-blue-pure-silver.jpg",
           "description": "Asics Gel-Nimbus 23 sneakers with advanced cushioning for long-distance running.",
           "keywords": ["running", "Gel-Nimbus", "long-distance", "Asics"]
         }
@@ -146,7 +146,7 @@
           "price": 170,
           "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
           "release_date": "2023-06-30",
-          "image": "https://m.media-amazon.com/images/I/51oVsn8KP0L._AC_UY900_.jpg",
+          "image": "https://media.karousell.com/media/photos/products/2023/9/21/nike_jordan_1_retro_black_toe__1695335400_38020486_progressive.jpg",
           "description": "Air Jordan 1 Retro High sneakers paying homage to the original with premium materials.",
           "keywords": ["basketball", "Air Jordan", "retro", "premium materials"]
         },
@@ -170,7 +170,7 @@
           "price": 160,
           "sizes": ["US 8", "US 9", "US 10", "US 11", "US 12"],
           "release_date": "2023-07-15",
-          "image": "https://i.ebayimg.com/images/g/k7IAAOSwquJi6Wjb/s-l1600.jpg",
+          "image": "https://i.ebayimg.com/images/g/sY0AAOSwMeVh9gR7/s-l1600.jpg",
           "description": "Under Armour Curry 8 sneakers with responsive cushioning and traction for sharp cuts.",
           "keywords": [
             "basketball",
@@ -240,7 +240,7 @@
           "price": 140,
           "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
           "release_date": "2023-07-20",
-          "image": "https://images.bauerhosting.com/affiliates/sites/2/2024/02/7-1.jpg?auto=format&w=1440&q=80",
+          "image": "https://www.thegreatoutdoorsmag.com/wp-content/uploads/sites/15/2024/02/Keen-Targhee-Mid-III-Review.png",
           "description": "Keen Targhee III Waterproof hiking sneakers for all-terrain exploration.",
           "keywords": ["hiking", "waterproof", "Keen", "all-terrain"]
         },
@@ -252,7 +252,7 @@
           "price": 110,
           "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
           "release_date": "2023-07-25",
-          "image": "https://shoeclub.com/cdn/shop/products/Newtonridge_black_1.jpg?v=1621395709",
+          "image": "https://columbia.scene7.com/is/image/ColumbiaSportswear2/1594731_217_f2_tt?wid=768&hei=806&v=1718652164",
           "description": "Columbia Newton Ridge Plus II hiking sneakers with Omni-Grip traction and waterproofing.",
           "keywords": ["hiking", "Omni-Grip", "waterproof", "Columbia"]
         },
@@ -264,7 +264,7 @@
           "price": 160,
           "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
           "release_date": "2023-08-01",
-          "image": "https://www.kickscrew.com/cdn/shop/files/1_92d05fca-1fca-4f59-a452-4546bf06d55d_540x.jpg?v=1715657014",
+          "image": "https://i.ebayimg.com/images/g/tVkAAOSwPwRkSBYZ/s-l500.jpg",
           "description": "The North Face Ultra 111 Waterproof hiking sneakers for wet and rugged trails.",
           "keywords": ["hiking", "waterproof", "The North Face", "rugged"]
         }
@@ -310,7 +310,7 @@
           "price": 90,
           "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
           "release_date": "2023-08-01",
-          "image": "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2013%2F04%2Fadidas-skateboarding-busenitz-pro-white-1.jpg?cbr=1&q=90",
+          "image": "https://selectabisso.com/wp-content/uploads/2022/11/Kader-Sylla-adidas-Skateboarding-Superstar-ADV-Lead.jpg",
           "description": "Adidas Skateboarding Busenitz Pro sneakers designed with Dennis Busenitz's signature style.",
           "keywords": [
             "skateboarding",
@@ -345,8 +345,279 @@
             "skateboarding",
             "DC Shoes",
             "pill pattern tread",
-            "signature"
+            "signature"]
+          }
           ]
+        },
+        {
+          "name": "Athletic",
+          "sneakers": [
+            {
+              "id": "26",
+              "brand": "Under Armour",
+              "model": "HOVR Phantom 3",
+              "color": "Black/White",
+              "price": 140,
+              "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+              "release_date": "2023-09-30",
+              "image": "https://cdn.runrepeat.com/storage/gallery/product_content/39388/under-armour-hovr-phantom-3-2-20232008-720.jpg",
+              "description": "Under Armour HOVR Phantom 3 athletic sneakers designed for ultimate comfort and energy return.",
+              "keywords": [
+                "athletic",
+                "Under Armour",
+                "HOVR",
+                "comfort",
+                "energy return"
+              ]
+            },
+            {
+              "id": "27",
+              "brand": "Nike",
+              "model": "Air Zoom Pegasus 38",
+              "color": "Black/White",
+              "price": 120,
+              "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+              "release_date": "2023-03-10",
+              "image": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/9377fdd3-da70-40e4-962f-6b7fa583a60d/pegasus-38-road-running-shoes-Jx99Xw.png",
+              "description": "Nike Air Zoom Pegasus 38 designed for high-speed running with responsive cushioning.",
+              "keywords": ["running", "Nike", "Zoom", "cushioning"]
+            },
+            {
+              "id": "28",
+              "brand": "Adidas",
+              "model": "Ultraboost 21",
+              "color": "White/Black",
+              "price": 180,
+              "sizes": ["US 6", "US 7", "US 8", "US 9", "US 10"],
+              "release_date": "2023-04-15",
+              "image": "https://www.sportsdirect.com/images/imgzoom/21/21284701_xxl.jpg",
+              "description": "Adidas Ultraboost 21 high-performance running shoes with responsive boost technology.",
+              "keywords": ["running", "Adidas", "Ultraboost", "performance"]
+            },
+            {
+              "id": "29",
+              "brand": "Asics",
+              "model": "Gel-Kayano 27",
+              "color": "Blue/Orange",
+              "price": 160,
+              "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+              "release_date": "2023-02-20",
+              "image": "https://irunsg.com/cdn/shop/articles/asics-gel-kayano-27-tokyo-review-irun-singapore.jpg?v=1713346769",
+              "description": "Asics Gel-Kayano 27 provides stability and support for long-distance runs.",
+              "keywords": ["running", "Asics", "Gel-Kayano", "stability"]
+            },
+            {
+              "id": "30",
+              "brand": "New Balance",
+              "model": "Fresh Foam 1080v11",
+              "color": "Grey/Green",
+              "price": 150,
+              "sizes": ["US 8", "US 9", "US 10", "US 11", "US 12"],
+              "release_date": "2023-05-05",
+              "image": "https://distance-store.com/cdn/shop/products/2211_6218bdc917ff7_600x.jpg?v=1699301015",
+              "description": "New Balance Fresh Foam 1080v11 for a smooth and plush ride.",
+              "keywords": ["running", "New Balance", "Fresh Foam", "comfort"]
+            }
+          ]
+        },
+        {
+          "name": "Lifestyle",
+          "sneakers": [
+            {
+              "id": "31",
+              "brand": "Adidas",
+              "model": "NMD_R1",
+              "color": "Black/White",
+              "price": 140,
+              "sizes": ["US 6", "US 7", "US 8", "US 9", "US 10"],
+              "release_date": "2023-06-15",
+              "image": "https://distance-store.com/cdn/shop/products/2211_6218bdc917ff7_600x.jpg?v=1699301015",
+              "description": "Adidas NMD_R1 sneakers for a modern, streetwear look.",
+              "keywords": ["lifestyle", "Adidas", "NMD", "streetwear"]
+            },
+            {
+              "id": "32",
+              "brand": "Nike",
+              "model": "Air Force 1",
+              "color": "White",
+              "price": 100,
+              "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+              "release_date": "2023-01-25",
+              "image": "https://pictures-ghana.jijistatic.net/33036934_NjIwLTYxOS05OGVkMzY2NjJh.webp",
+              "description": "Nike Air Force 1 iconic lifestyle sneakers with classic style.",
+              "keywords": ["lifestyle", "Nike", "Air Force 1", "classic"]
+            },
+            {
+              "id": "33",
+              "brand": "Puma",
+              "model": "Suede Classic",
+              "color": "Black/Gold",
+              "price": 80,
+              "sizes": ["US 6", "US 7", "US 8", "US 9", "US 10"],
+              "release_date": "2023-03-30",
+              "image": "https://photos6.spartoo.eu/photos/765/765643/765643_1200_A.jpg",
+              "description": "Puma Suede Classic for a timeless, everyday look.",
+              "keywords": ["lifestyle", "Puma", "Suede", "timeless"]
+            },
+            {
+              "id": "34",
+              "brand": "Reebok",
+              "model": "Classic Leather",
+              "color": "White/Grey",
+              "price": 90,
+              "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+              "release_date": "2023-02-12",
+              "image": "https://reebok.ph/cdn/shop/files/100032772B2048.webp?v=1692775592",
+              "description": "Reebok Classic Leather sneakers for everyday comfort and style.",
+              "keywords": ["lifestyle", "Reebok", "Classic", "comfort"]
+            },
+            {
+              "id": "35",
+              "brand": "Converse",
+              "model": "Chuck Taylor All Star",
+              "color": "Black/White",
+              "price": 60,
+              "sizes": ["US 6", "US 7", "US 8", "US 9", "US 10"],
+              "release_date": "2023-04-10",
+              "image": "https://www.converse.com/dw/image/v2/BJJF_PRD/on/demandware.static/-/Sites-cnv-master-catalog-we/default/dw72f5fb17/images/g_08/568497C_G_08X1.jpg?sw=406",
+              "description": "Converse Chuck Taylor All Star for a classic and versatile style.",
+              "keywords": ["lifestyle", "Converse", "Chuck Taylor", "classic"]
+            }
+          ]
+        },
+        {
+          "name": "Retro",
+          "sneakers": [
+            {
+              "id": "36",
+              "brand": "Nike",
+              "model": "Air Max 90",
+              "color": "White/Red",
+              "price": 130,
+              "sizes": ["US 8", "US 9", "US 10", "US 11", "US 12"],
+              "release_date": "2023-07-20",
+              "image": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/31bd10fa-4d63-4b72-9857-4e5de0df9cd2/air-max-90-mens-shoes-Bd2qnn.png",
+              "description": "Nike Air Max 90 retro sneakers with a classic design.",
+              "keywords": ["retro", "Nike", "Air Max", "classic"]
+            },
+            {
+              "id": "37",
+              "brand": "Adidas",
+              "model": "Superstar",
+              "color": "White/Black",
+              "price": 85,
+              "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+              "release_date": "2023-06-01",
+              "image": "https://pictures-ghana.jijistatic.net/36119299_NjIwLTYyMC1jYmJlMTcwYjQ5.webp",
+              "description": "Adidas Superstar retro sneakers with iconic shell toe design.",
+              "keywords": ["retro", "Adidas", "Superstar", "iconic"]
+            },
+            {
+              "id": "38",
+              "brand": "Puma",
+              "model": "Ralph Sampson Mid",
+              "color": "White/Blue",
+              "price": 100,
+              "sizes": ["US 6", "US 7", "US 8", "US 9", "US 10"],
+              "release_date": "2023-05-15",
+              "image": "https://i.pinimg.com/originals/1e/cb/7d/1ecb7d32690540f0bdd22a402441ed63.jpg",
+              "description": "Puma Ralph Sampson Mid retro sneakers with a classic basketball design.",
+              "keywords": ["retro", "Puma", "Ralph Sampson", "basketball"]
+            },
+            {
+              "id": "39",
+              "brand": "Reebok",
+              "model": "Club C 85",
+              "color": "White/Green",
+              "price": 75,
+              "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+              "release_date": "2023-02-10",
+              "image": "https://shopwice.com/wp-content/uploads/2021/11/Club_C_85_Shoes_Black_FV9884_03_standard.jpg.webp",
+              "description": "Reebok Club C 85 retro sneakers for a classic and comfortable look.",
+              "keywords": ["retro", "Reebok", "Club C", "comfortable"]
+            },
+            {
+              "id": "40",
+              "brand": "New Balance",
+              "model": "574",
+              "color": "Grey/White",
+              "price": 90,
+              "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+              "release_date": "2023-04-20",
+              "image": "https://uk.officinegenerale.com/cdn/shop/files/NBUS574LGBN_d26b273c-659d-4781-99aa-8be3e711f468.jpg?v=1693994123",
+              "description": "New Balance 574 retro sneakers with a classic and timeless design.",
+              "keywords": ["retro", "New Balance", "574", "timeless"]
+            }
+          ]
+        },
+        {
+          "name": "Performance",
+          "sneakers": [
+            {
+              "id": "41",
+              "brand": "Asics",
+              "model": "Gel-Nimbus 23",
+              "color": "Black/Red",
+              "price": 150,
+              "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+              "release_date": "2023-05-25",
+              "image": "https://racketlon.co.za/20926-large_default/asics-gel-nimbus-23-ladies-smoke-blue-pure-silver.jpg",
+              "description": "Asics Gel-Nimbus 23 performance sneakers for a cushioned and comfortable run.",
+              "keywords": ["performance", "Asics", "Gel-Nimbus", "cushioned"]
+            },
+            {
+              "id": "42",
+              "brand": "Brooks",
+              "model": "Ghost 14",
+              "color": "Grey/Black",
+              "price": 130,
+              "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+              "release_date": "2023-06-10",
+              "image": "https://skigo.lt/3111-superlarge_default/brooks-ghost-14-women-s-road-running-shoes.jpg",
+              "description": "Brooks Ghost 14 performance sneakers with a smooth and balanced ride.",
+              "keywords": ["performance", "Brooks", "Ghost", "smooth"]
+            },
+            {
+              "id": "43",
+              "brand": "Saucony",
+              "model": "Triumph 19",
+              "color": "Blue/Yellow",
+              "price": 150,
+              "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+              "release_date": "2023-07-05",
+              "image": "https://i.ebayimg.com/images/g/P~YAAOSw8C5j~A~N/s-l400.jpg",
+              "description": "Saucony Triumph 19 performance sneakers for ultimate cushioning and comfort.",
+              "keywords": ["performance", "Saucony", "Triumph", "cushioning"]
+            },
+            {
+              "id": "44",
+              "brand": "Hoka One One",
+              "model": "Clifton 8",
+              "color": "Orange/White",
+              "price": 140,
+              "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+              "release_date": "2023-04-25",
+              "image": "https://shoefit.uk/wp-content/uploads/2023/03/1119393-BWHT-HOKA-Clifton-8-Black-White-42-1.jpg",
+              "description": "Hoka One One Clifton 8 performance sneakers with a lightweight and responsive design.",
+              "keywords": [
+                "performance",
+                "Hoka One One",
+                "Clifton",
+                "lightweight"
+              ]
+            },
+            {
+              "id": "45",
+              "brand": "Mizuno",
+              "model": "Wave Rider 25",
+              "color": "Navy/Gold",
+              "price": 135,
+              "sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+              "release_date": "2023-06-20",
+              "image": "https://believeintherun.com/wp-content/uploads/2021/07/mizuno-wave-rider-25-upper.jpeg",
+              "description": "Mizuno Wave Rider 25 performance sneakers for a smooth and dynamic ride.",
+              "keywords": ["performance", "Mizuno", "Wave Rider", "dynamic"]
+           
         }
       ]
     }
