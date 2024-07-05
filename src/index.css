@@ -26,20 +26,20 @@
 }
 
 .card {
-    background-color: #D1D5DB; /* Slate 50 background */
-    color: #111827; /* Dark text color */
+    background-color: #D1D5DB;
+    color: #111827; 
   }
   .card-image {
-    height: 300px; /* Adjust as needed */
+    height: 300px;
     background-size: cover;
     background-position: center;
   }
   .custom-select {
     position: relative;
-    width: calc(33.33% - 10px); /* Adjust width as needed */
+    width: calc(33.33% - 10px); 
     margin-left: 5px;
     margin-right: 5px;
-    color: #718096;
+    color: black;
     font-size: 0.75rem;
     line-height: 1.25rem;
   }
@@ -50,22 +50,19 @@
     width: 100%;
     height: 2.25rem;
     padding: 0.375rem 1.5rem 0.375rem 0.75rem;
-    border: 1px solid #e2e8f0;
-    background-color: #fff;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M10 12l-5-5 1.5-1.5L10 9.001l3.5-3.5L15 7z' clip-rule='evenodd' /%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 0.5rem center;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: white;
     background-size: 1.5em 1.5em;
     cursor: pointer;
     border-radius: 0.375rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    /* Remove outline */
     outline: none;
   }
   .custom-select select:focus {
     border-color: #CBD5E0;
-    box-shadow: 0 0 0 1px rgba(66, 153, 225, 0.5);
+    box-shadow: 0 0 0 1px rgba(15,81,58, 0.2);
   }
+
   .custom-select svg {
     position: absolute;
     right: 0.75rem;
@@ -75,10 +72,10 @@
     fill: #A0AEC0;
   }
   .custom-button {
-    background-color: #0F513A; /* Dark green background */
-    color: #FFFFFF; /* White text color */
+    background-color: #0F513A; 
+    color: #FFFFFF;
     transition: background-color 0.3s ease;
   }
   .custom-button:hover {
-    background-color: #1A702E; /* Darker green on hover */
+    background-color: #1A702E; 
   }

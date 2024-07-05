@@ -35,12 +35,12 @@ function Navbar() {
     >
       <div className="flex-shrink-0">
         <img
-          className="hidden md:block md:w-[170px] mr-3 md:h-[60px] object-cover w-[80px]"
+          className="hidden md:block md:w-[170px] mr-3 md:h-[60px] object-cover w-[80px] cursor-pointer"
           src={kingdom}
           alt="logo"
         />
         <img
-          className="md:hidden h-[40px] object-cover w-[40px] mt-2 ml-2 "
+          className="md:hidden h-[40px] object-cover w-[40px] mt-2 ml-2 cursor-pointer"
           src={logo}
           alt="Food logo"
         />
@@ -50,12 +50,11 @@ function Navbar() {
         className={`lg:relative absolute lg:block lg:top-0 top-0 lg:right-[0] right-[-100%] bg-[#0F513A] min-h-[40vh] lg:min-h-[0] w-[50%] lg:w-[400px] rounded-bl-[50px] backdrop-blur-sm items-center transition-all duration-300 z-50 ${
           toggleMenu ? "right-[0]" : "right-[-100%]"
         } `}
-        
       >
         <HiX
-            className="cursor-pointer absolute right-8 top-5 lg:hidden text-[35px] transition-all duration-300"
-            onClick={toggleOnMenu}
-          />
+          className="cursor-pointer absolute right-8 top-5 lg:hidden text-[35px] transition-all duration-300"
+          onClick={toggleOnMenu}
+        />
         <ul className="flex lg:py-0 py-12 gap-[4vh] lg:gap-[0] lg:space-x-5 lg:flex-row flex-col items-start lg:px-0 px-10 ">
           <li
             className={`text-white cursor-pointer font-semibold relative underline-animation transition duration-300 ease-in-out ${
@@ -109,7 +108,11 @@ function Navbar() {
         <div className="relative px-1 z-10">
           <input
             type="text"
-            className={`w-full p-1 rounded-full dark:bg-transparent outline-none px-2 ${theme === 'dark' ? 'text-white bg-[#333333]' : 'text-gray-700 bg-slate-100'}`}
+            className={`w-full p-1 rounded-full dark:bg-transparent outline-none px-2 ${
+              theme === "dark"
+                ? "text-white bg-[#333333]"
+                : "text-gray-700 bg-slate-100"
+            }`}
             placeholder="Search..."
           />
           <button className="absolute rounded-r-full w-8 right-1 top-1/2 -translate-y-1/2 p-2 bg-green-700">
