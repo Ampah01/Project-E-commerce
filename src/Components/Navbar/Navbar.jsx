@@ -1,4 +1,5 @@
 import React, { useState, useContext } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import kingdom from "../../assets/Kingdom.jpg";
 import logo from "../../assets/sm_kingdom.jpg";
 import {
@@ -12,14 +13,14 @@ import {
 import { ThemeContext } from "../../App";
 
 function Navbar() {
-  const [active, setActive] = useState("home");
   const { theme, setTheme } = useContext(ThemeContext);
   const [toggleMenu, setToggleMenu] = useState(false);
   const [cartQuantity, setCartQuantity] = useState(0);
+  const location = useLocation();
 
   const handleQuantity = () => {
-    setCartQuantity(c => c + 1)
-  }
+    setCartQuantity((c) => c + 1);
+  };
 
   const toggleTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
@@ -31,99 +32,108 @@ function Navbar() {
     setToggleMenu(!toggleMenu);
   };
 
+  const isActive = (path) => {
+    return location.pathname === path ? "active" : "";
+  };
+
   return (
     <div
-      className="flex items-center top-0  fixed w-full justify-between lg:py-4 md:p-4 text-slate-50 lg:px-[60px] shadow-md  z-50"
-      style={{
-        backgroundColor: "#0F513A",
-      }}
+      className="flex items-center top-0 fixed w-full justify-between lg:py-4 md:p-4 text-slate-50 lg:px-[60px] shadow-md z-50"
+      style={{ backgroundColor: "#0F513A" }}
     >
       <div className="flex-shrink-0">
-        <img
-          className="hidden md:block md:w-[170px] mr-3 md:h-[60px] object-cover w-[80px] cursor-pointer"
-          src={kingdom}
-          alt="logo"
-        />
-        <img
-          className="md:hidden h-[40px] object-cover w-[40px] mt-2 ml-2 cursor-pointer"
-          src={logo}
-          alt="Food logo"
-        />
+        <NavLink to="/">
+          <img
+            className="hidden md:block md:w-[170px] md:h-[60px] object-cover w-[80px] cursor-pointer"
+            src={kingdom}
+            alt="logo"
+          />
+          <img
+            className="md:hidden h-[40px] object-cover w-[40px] mt-2 ml-2 cursor-pointer"
+            src={logo}
+            alt="Food logo"
+          />
+        </NavLink>
       </div>
 
       <div
         className={`lg:relative absolute lg:block lg:top-0 top-0 lg:right-[0] right-[-100%] bg-[#0F513A] min-h-[40vh] lg:min-h-[0] w-[50%] lg:w-[400px] rounded-bl-[50px] backdrop-blur-sm items-center transition-all duration-300 z-50 ${
           toggleMenu ? "right-[0]" : "right-[-100%]"
-        } `}
+        }`}
       >
         <HiX
           className="cursor-pointer absolute right-8 top-5 lg:hidden text-[35px] transition-all duration-300"
           onClick={toggleOnMenu}
         />
-        <ul className="flex lg:py-0 py-12 gap-[4vh] lg:gap-[0] lg:space-x-5 lg:flex-row flex-col items-start lg:px-0 px-10 ">
+        <ul className="flex lg:py-0 py-12 gap-[4vh] lg:gap-0 lg:space-x-5 lg:flex-row flex-col items-start lg:px-0 px-10">
           <li
-            className={`text-white cursor-pointer font-semibold relative underline-animation transition duration-300 ease-in-out ${
-              active === "home"
-                ? "after:-bottom-1 after:w-full after:absolute after:bg-white after:transition-all after:duration-300 after:ease-in-out"
-                : ""
+            className={`text-white cursor-pointer font-semibold relative transition duration-300 ease-in-out ${
+              isActive("/") ? "active-item" : ""
             }`}
-            onClick={() => setActive("home")}
+            onClick={() => setToggleMenu(false)}
           >
-            Home
-          </li>
-          <li
-            className={`text-white cursor-pointer font-semibold underline-animation relative transition duration-300 ease-in-out ${
-              active === "about"
-                ? "after:-bottom-1 after:w-full after:absolute after:bg-white after:transition-all after:duration-300 after:ease-in-out"
-                : ""
-            }`}
-            onClick={() => setActive("about")}
-          >
-            About us
+            <NavLink
+              to="/"
+              onClick={() => setToggleMenu(false)}
+              className={`nav-link ${isActive("/") ? "active-link" : ""}`}
+            >
+              Home
+            </NavLink>
           </li>
           <li
-            className={`text-white cursor-pointer font-semibold underline-animation relative transition duration-300 ease-in-out ${
-              active === "service"
-                ? "after:-bottom-1 after:w-full after:absolute after:bg-white after:transition-all after:duration-300 after:ease-in-out"
-                : ""
+            className={`text-white cursor-pointer font-semibold relative transition duration-300 ease-in-out ${
+              isActive("/about") ? "active-item" : ""
             }`}
-            onClick={() => setActive("service")}
+            onClick={() => setToggleMenu(false)}
           >
-            Services
+            <NavLink
+              to="/about"
+              onClick={() => setToggleMenu(false)}
+              className={`nav-link ${isActive("/about") ? "active-link" : ""}`}
+            >
+              About us
+            </NavLink>
           </li>
           <li
-            className={`text-white cursor-pointer font-semibold underline-animation relative transition duration-300 ease-in-out ${
-              active === "contact"
-                ? "after:-bottom-1 after:w-full after:absolute after:bg-white after:transition-all after:duration-300 after:ease-in-out"
-                : ""
+            className={`text-white cursor-pointer font-semibold relative transition duration-300 ease-in-out ${
+              isActive("/services") ? "active-item" : ""
             }`}
-            onClick={() => setActive("contact")}
+            onClick={() => setToggleMenu(false)}
           >
-            Contact
+            <NavLink
+              to="/services"
+              onClick={() => setToggleMenu(false)}
+              className={`nav-link ${
+                isActive("/services") ? "active-link" : ""
+              }`}
+            >
+              Services
+            </NavLink>
           </li>
-          <li>
-            <button className="px-4 py-1 bg-slate-50 text-green-700 rounded-sm hover:bg-green-700 hover:text-slate-50 transition-all duration-300">
-              Sign in
-            </button>
+          <li
+            className={`text-white cursor-pointer font-semibold relative transition duration-300 ease-in-out ${
+              isActive("/contact") ? "active-item" : ""
+            }`}
+            onClick={() => setToggleMenu(false)}
+          >
+            <NavLink
+              to="/contact"
+              onClick={() => setToggleMenu(false)}
+              className={`nav-link ${
+                isActive("/contact") ? "active-link" : ""
+              }`}
+            >
+              Contact
+            </NavLink>
           </li>
+          
         </ul>
       </div>
 
-      <div className="flex items-center ">
-        <div className="relative px-2 z-10">
-          <input
-            type="text"
-            className={`w-full p-1 rounded-full dark:bg-transparent outline-none px-4 ${
-              theme === "dark"
-                ? "text-white bg-[#333333]"
-                : "text-gray-700 bg-slate-100"
-            }`}
-            placeholder="Search..."
-          />
-          <button className="absolute rounded-r-full w-8 right-1 top-1/2 -translate-y-1/2 p-2 bg-green-700">
-            <HiOutlineSearch />
-          </button>
-        </div>
+      <div className="flex items-center">
+      <button className="px-4 py-1 bg-slate-50 text-green-700 rounded-sm hover:bg-green-700 hover:text-slate-50 transition-all duration-300">
+              Sign in
+            </button>
 
         <HiOutlineShoppingCart className="text-slate-50 lg:text-[32px] text-[35px] cursor-pointer ml-4" />
 

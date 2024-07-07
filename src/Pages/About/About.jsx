@@ -1,11 +1,14 @@
-import React from 'react'
+import React from 'react';
+import AboutUs from '../../Components/AboutUs/AboutUs';
+import Footer from '../../Components/Footer/Footer';
 
-const ProductDetails = () => {
+function About() {
   return (
     <div>
-      Order
+      <AboutUs />
+      <Footer />
     </div>
   )
 }
 
-export default ProductDetails;
+export default About

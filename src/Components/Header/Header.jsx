@@ -1,10 +1,21 @@
 import React from "react";
 import Slider from "react-slick";
+import { motion } from "framer-motion";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import background_1 from "../../assets/background_1.jpg";
 import background_2 from "../../assets/background_2.jpg";
 import background_3 from "../../assets/background_3.jpg";
+
+const textVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { 
+    opacity: 1, 
+    y: 0,
+    transition: { delay: 0.3, duration: 0.6 }
+  }
+};
+
 
 function Header() {
   const settings = {
@@ -33,18 +44,33 @@ function Header() {
             className="object-cover w-full h-full"
           />
           <div className="absolute inset-0 bg-black opacity-75 flex flex-col md:justify-end justify-center items-center text-center text-white p-4">
-            <h1 className="text-3xl md:text-5xl font-bold tracking-tighter mb-4">
+            <motion.h1 
+              className="text-3xl md:text-5xl font-bold tracking-tighter mb-4"
+              initial="hidden"
+              animate="visible"
+              variants={textVariants}
+            >
               Get your sneakers at our{" "}
               <span className="text-green-500">kingdom</span>
-            </h1>
-            <p className="text-lg md:text-xl mb-6 md:w-[50%]">
-              Unleash your potential with SneakerShop. Our cutting-edge
+            </motion.h1>
+            <motion.p 
+              className="text-lg md:text-xl mb-6 md:w-[50%]"
+              initial="hidden"
+              animate="visible"
+              variants={textVariants}
+            >
+              Unleash your potential with Kick Kingdom. Our cutting-edge
               sneakers blend technology and design to deliver peak performance
               and everyday elegance. Walk with confidence, run with excellence
-            </p>
-            <button className="px-4 py-2 md:mb-8 bg-green-500 text-white rounded-md hover:bg-green-700 transition-all duration-300">
+            </motion.p>
+            <motion.button 
+              className="px-4 py-2 md:mb-8 bg-green-500 text-white rounded-md hover:bg-green-700 transition-all duration-300"
+              initial="hidden"
+              animate="visible"
+              variants={textVariants}
+            >
               View sneakers
-            </button>
+            </motion.button>
           </div>
         </div>
 
@@ -58,18 +84,33 @@ function Header() {
             className="object-cover w-full h-full"
           />
           <div className="absolute inset-0 bg-black opacity-75 flex flex-col md:justify-end justify-center items-center text-center text-white p-4">
-            <h1 className="text-3xl md:text-5xl font-bold tracking-tighter mb-4">
+            <motion.h1 
+              className="text-3xl md:text-5xl font-bold tracking-tighter mb-4"
+              initial="hidden"
+              animate="visible"
+              variants={textVariants}
+            >
               Your <span className="text-green-500">Sneaker</span> Journey
               Starts Here
-            </h1>
-            <p className="text-lg md:text-xl mb-6 md:w-[50%]">
-              SneakerShop: Where innovation meets style. Explore our range of
+            </motion.h1>
+            <motion.p 
+              className="text-lg md:text-xl mb-6 md:w-[50%]"
+              initial="hidden"
+              animate="visible"
+              variants={textVariants}
+            >
+              Kicks Kingdom: Where innovation meets style. Explore our range of
               premium sneakers designed to enhance your performance and elevate
               your look. Comfort and fashion, redefined
-            </p>
-            <button className="px-4 py-2 md:mb-8 bg-green-500 text-white rounded-md hover:bg-green-700 transition-all duration-300">
+            </motion.p>
+            <motion.button 
+              className="px-4 py-2 md:mb-8 bg-green-500 text-white rounded-md hover:bg-green-700 transition-all duration-300"
+              initial="hidden"
+              animate="visible"
+              variants={textVariants}
+            >
               View sneakers
-            </button>
+            </motion.button>
           </div>
         </div>
 
@@ -83,19 +124,34 @@ function Header() {
             className="object-cover w-full h-full"
           />
           <div className="absolute inset-0 bg-black opacity-75 flex flex-col md:justify-end justify-center items-center text-center text-white p-4">
-            <h1 className="text-3xl md:text-5xl font-bold tracking-tighter mb-4">
+            <motion.h1 
+              className="text-3xl md:text-5xl font-bold tracking-tighter mb-4"
+              initial="hidden"
+              animate="visible"
+              variants={textVariants}
+            >
               Discover Your Perfect{" "}
               <span className="text-green-500">Sneaker</span> Match
-            </h1>
-            <p className="text-lg md:text-xl mb-6 md:w-[50%]">
-              Experience the future of footwear at SneakerShop. Discover
+            </motion.h1>
+            <motion.p 
+              className="text-lg md:text-xl mb-6 md:w-[50%]"
+              initial="hidden"
+              animate="visible"
+              variants={textVariants}
+            >
+              Experience the future of footwear at Kick Kingdom. Discover
               high-performance, innovative sneakers crafted for athletes and
               trendsetters alike. Step up your game with unparalleled style and
               comfort
-            </p>
-            <button className="px-4 py-2 md:mb-8 bg-green-500 text-white rounded-md hover:bg-green-700 transition-all duration-300">
+            </motion.p>
+            <motion.button 
+              className="px-4 py-2 md:mb-8 bg-green-500 text-white rounded-md hover:bg-green-700 transition-all duration-300"
+              initial="hidden"
+              animate="visible"
+              variants={textVariants}
+            >
               View sneakers
-            </button>
+            </motion.button>
           </div>
         </div>
       </Slider>

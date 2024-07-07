@@ -10,7 +10,7 @@ function SneakerList({ sneakers }) {
 
   return (
     <div className="container mx-auto lg:p-4 p-1">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         <AnimatePresence>
           {sneakers.map((sneaker) => (
             <motion.div
@@ -122,7 +122,7 @@ function SneakerList({ sneakers }) {
       </div>
       {selectedSneaker && (
         <div className="fixed top-0 left-0 right-0 bottom-0 bg-gray-900 bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white p-4 rounded-lg shadow-lg max-w-md">
+          <div className="bg-white p-4 rounded-lg w-[90%] shadow-lg max-w-md">
             <h3 className="text-xl font-bold mb-2">{selectedSneaker.model}</h3>
             <img
               src={selectedSneaker.image}

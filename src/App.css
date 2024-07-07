@@ -10,3 +10,23 @@ body {
     margin: 0;
     padding: 0;
   }
+  .transition {
+    transition-property: color, background-color;
+  }
+  
+  .duration-300 {
+    transition-duration: 300000ms;
+  }
+  
+  .ease-in-out {
+    transition-timing-function: ease-in-out;
+  }
+  
+  .text-white {
+    color: #ffffff;
+  }
+  
+  .font-semibold {
+    font-weight: 600;
+  }
+  
