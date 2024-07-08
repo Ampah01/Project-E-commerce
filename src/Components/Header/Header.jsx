@@ -32,11 +32,11 @@ function Header() {
   };
 
   return (
-    <div className="overflow-hidden md:mt-[90px]">
+    <div className="overflow-hidden">
       <Slider {...settings}>
         <div
           key="slide1"
-          className="relative h-[90vh] md:h-[40vw] w-full md:w-4/5 rounded-sm overflow-hidden"
+          className="relative h-[80vh] md:h-[50vw] lg:h-[40vw] w-full md:w-4/5  overflow-hidden"
         >
           <img
             src={background_1}
@@ -45,7 +45,7 @@ function Header() {
           />
           <div className="absolute inset-0 bg-black opacity-75 flex flex-col md:justify-end justify-center items-center text-center text-white p-4">
             <motion.h1 
-              className="text-3xl md:text-5xl font-bold tracking-tighter mb-4"
+              className="text-3xl lg:text-5xl md:text-4xl font-bold tracking-tighter mb-1"
               initial="hidden"
               animate="visible"
               variants={textVariants}
@@ -76,7 +76,7 @@ function Header() {
 
         <div
           key="slide2"
-          className="relative h-[90vh] md:h-[40vw] w-full md:w-4/5 rounded-sm overflow-hidden"
+          className="relative h-[80vh] md:h-[50vw] lg:h-[40vw] w-full md:w-4/5 overflow-hidden"
         >
           <img
             src={background_2}
@@ -85,7 +85,7 @@ function Header() {
           />
           <div className="absolute inset-0 bg-black opacity-75 flex flex-col md:justify-end justify-center items-center text-center text-white p-4">
             <motion.h1 
-              className="text-3xl md:text-5xl font-bold tracking-tighter mb-4"
+              className="text-3xl lg:text-5xl md:text-4xl font-bold tracking-tighter mb-4"
               initial="hidden"
               animate="visible"
               variants={textVariants}
@@ -116,7 +116,7 @@ function Header() {
 
         <div
           key="slide3"
-          className="relative h-[90vh] md:h-[40vw] w-full md:w-4/5 rounded-sm overflow-hidden"
+          className="relative h-[80vh] md:h-[50vw] lg:h-[40vw] w-full md:w-4/5 overflow-hidden"
         >
           <img
             src={background_3}
@@ -125,7 +125,7 @@ function Header() {
           />
           <div className="absolute inset-0 bg-black opacity-75 flex flex-col md:justify-end justify-center items-center text-center text-white p-4">
             <motion.h1 
-              className="text-3xl md:text-5xl font-bold tracking-tighter mb-4"
+              className="text-3xl lg:text-5xl md:text-4xl font-bold tracking-tighter mb-4"
               initial="hidden"
               animate="visible"
               variants={textVariants}

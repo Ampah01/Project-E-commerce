@@ -1,8 +1,64 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { CartContext } from "../../App";
 
 function SneakerList({ sneakers }) {
+  const { cart, setCart } = useContext(CartContext)
   const [selectedSneaker, setSelectedSneaker] = useState(null);
+  const [selectedOptions, setSelectedOptions] = useState({});
+
+  const handleOptionChange = (sneakerId, optionType, value) => {
+    setSelectedOptions((prevOptions) => ({
+      ...prevOptions,
+      [sneakerId]: {
+        ...prevOptions[sneakerId],
+        [optionType]: value,
+      },
+    }));
+  };
+
+  const handleAddToCart = (sneaker) => {
+    const defaultOptions = {
+      size: sneaker.sizes[0], 
+      quantity: 1, 
+      color: "black", 
+    };
+    const selectedOption = selectedOptions[sneaker.id] || {};
+    const { size, quantity, color } = {
+      ...defaultOptions,
+      ...selectedOption,
+    };
+
+    const existingCartItem = cart.find(
+      (item) =>
+        item.id === sneaker.id && item.size === size && item.color === color
+    );
+
+    if (existingCartItem) {
+      setCart(
+        cart.map((item) =>
+          item.id === sneaker.id && item.size === size && item.color === color
+            ? { ...item, quantity: item.quantity + parseInt(quantity) }
+            : item
+        )
+      );
+    } else {
+      setCart([
+        ...cart,
+        {
+          id: sneaker.id,
+          name: `${sneaker.brand} - ${sneaker.model}`,
+          image: sneaker.image,
+          size,
+          quantity: parseInt(quantity),
+          color,
+          price: sneaker.price
+        },
+      ]);
+    }
+
+    console.log("Cart:", cart);
+  };
 
   if (!sneakers || sneakers.length === 0) {
     return <div></div>;
@@ -50,6 +106,9 @@ function SneakerList({ sneakers }) {
                     name={`size-${sneaker.id}`}
                     className="block bg-gray-100 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm text-black"
                     aria-label={`Select size for ${sneaker.model}`}
+                    onChange={(e) =>
+                      handleOptionChange(sneaker.id, "size", e.target.value)
+                    }
                   >
                     {sneaker.sizes.map((size, index) => (
                       <option key={index} value={size}>
@@ -71,6 +130,9 @@ function SneakerList({ sneakers }) {
                     name={`quantity-${sneaker.id}`}
                     className="block bg-gray-100 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm text-black"
                     aria-label={`Select quantity for ${sneaker.model}`}
+                    onChange={(e) =>
+                      handleOptionChange(sneaker.id, "quantity", e.target.value)
+                    }
                   >
                     {[...Array(10).keys()].map((qty) => (
                       <option key={qty + 1} value={qty + 1}>
@@ -92,6 +154,9 @@ function SneakerList({ sneakers }) {
                     name={`color-${sneaker.id}`}
                     className="block bg-gray-100 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm text-black"
                     aria-label={`Select color for ${sneaker.model}`}
+                    onChange={(e) =>
+                      handleOptionChange(sneaker.id, "color", e.target.value)
+                    }
                   >
                     {["Black", "White", "Gray", "Blue", "Red"].map(
                       (color, index) => (
@@ -112,7 +177,10 @@ function SneakerList({ sneakers }) {
               </div>
 
               <div className="px-2 py-2 mt-2">
-                <button className="custom-button text-sm py-2 px-4 rounded-full w-full bg-green-600 hover:bg-green-700 text-white focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 mb-2">
+                <button
+                  className="custom-button text-sm py-2 px-4 rounded-full w-full bg-green-600 hover:bg-green-700 text-white focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 mb-2"
+                  onClick={() => handleAddToCart(sneaker)}
+                >
                   Add to Cart
                 </button>
               </div>

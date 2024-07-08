@@ -5,7 +5,7 @@ import shoesPhoto from "../../assets/background_3.jpg";
 
 function AboutUs() {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 md:mt-6 mt-20">
       <h1 className="text-4xl font-bold mb-8 text-center text-[#0F513A]">
         About Kicks Kingdom
       </h1>

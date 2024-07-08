@@ -33,8 +33,8 @@ function OurServices() {
   ];
 
   return (
-    <div className="container mx-auto p-4 mb-8 mt-8">
-      <h1 className="text-4xl font-bold mb-6 text-center text-[#0F513A]">
+    <div className="container mx-auto mb-8 mt-20 md:mt-6">
+      <h1 className="text-4xl font-bold mb-8 text-center text-[#0F513A]">
         Our Services
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
