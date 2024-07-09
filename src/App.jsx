@@ -8,6 +8,7 @@ import Contact from "./Pages/Contact/Contact.jsx";
 import About from "./Pages/About/About.jsx";
 import Login from "./Components/Login/Login.jsx";
 import Cart from "./Pages/Cart/Cart.jsx";
+import ProceedToCheckout from "./Pages/ProceedToCheckout/ProceedToCheckout.jsx";
 
 export const ThemeContext = createContext();
 export const CartContext = createContext();
@@ -33,6 +34,14 @@ function App() {
 
   const getTotalQuantity = () => {
     return cart.reduce((total, item) => total + item.quantity, 0);
+  };
+
+  const getTotalPrice = () => {
+    return cart.reduce((total, item) => total + item.quantity * item.price, 0);
+  };
+
+  const clearCart = () => {
+    setCart([]);
   };
 
   return (
@@ -66,8 +75,20 @@ function App() {
               element={
                 <Cart
                   cart={cart}
+                  clearCart ={clearCart}
                   setCart={setCart}
                   getTotalQuantity={getTotalQuantity}
+                />
+              }
+            />
+            <Route
+              path="/checkout"
+              element={
+                <ProceedToCheckout
+                  cart={cart}
+                  getTotalQuantity={getTotalQuantity}
+                  getTotalPrice={getTotalPrice}
+                  clearCart ={clearCart}
                 />
               }
             />

@@ -56,8 +56,6 @@ function SneakerList({ sneakers }) {
         },
       ]);
     }
-
-    console.log("Cart:", cart);
   };
 
   if (!sneakers || sneakers.length === 0) {
