@@ -22,7 +22,7 @@ const ProceedToCheckout = ({
 
   return (
     <div>
-    <div className="container mx-auto p-4 mt-20 md:mt-0 ">
+    <div className="container mx-auto p-4 mt-20 md:mt-0 min-h-[100vh]">
       <h1 className="text-3xl font-bold mb-4">Checkout</h1>
       <div className="mb-4 text-lg font-semibold">
         Total Items: {getTotalQuantity()}
