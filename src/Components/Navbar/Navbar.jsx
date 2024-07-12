@@ -1,28 +1,18 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import kingdom from "../../assets/Kingdom.jpg";
 import logo from "../../assets/sm_kingdom.jpg";
 import { PiShoppingCartSimple } from "react-icons/pi";
 import {
-  HiSun,
-  HiMoon,
   HiOutlineUserCircle,
   HiMenu,
   HiX,
 } from "react-icons/hi";
-import { ThemeContext } from "../../App";
 
 function Navbar({ setShowLogin, getTotalQuantity }) {
-  const { theme, setTheme } = useContext(ThemeContext);
   const [toggleMenu, setToggleMenu] = useState(false);
 
   const location = useLocation();
-
-  const toggleTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
-    setTheme(newTheme);
-    localStorage.setItem("theme", newTheme);
-  };
 
   const toggleOnMenu = () => {
     setToggleMenu(!toggleMenu);
@@ -135,7 +125,7 @@ function Navbar({ setShowLogin, getTotalQuantity }) {
           </button>
           <button
             onClick={() => setShowLogin(true)}
-            className="px-2 py-1   text-white hover:text-slate-50 transition-all duration-300 block lg:hidden "
+            className="px-2 py-1 text-white hover:text-slate-50 transition-all duration-300 block lg:hidden "
           >
             <HiOutlineUserCircle className="text-slate-50 text-[29px] cursor-pointer" />
           </button>
@@ -148,23 +138,10 @@ function Navbar({ setShowLogin, getTotalQuantity }) {
             </div>
           </div>
         </NavLink>
-        <div className=" px-2 ml-2">
-          {theme === "light" ? (
-            <HiMoon
-              className="text-[23px] lg:text-[25px] md:text-[25px]  bg-[#f0f0f0] shadow-md rounded-full  cursor-pointer text-[#333333] transition-all duration-300"
-              onClick={toggleTheme}
-            />
-          ) : (
-            <HiSun
-              className="text-[23px] md:text-[25px] lg:text-[30px] lg:p-1 bg-green-700 shadow-md rounded-full cursor-pointer text-slate-50 transition-all duration-300"
-              onClick={toggleTheme}
-            />
-          )}
-        </div>
 
         <div>
           <HiMenu
-            className="md:hidden text-[30px] cursor-pointer transition-all duration-300"
+            className="md:hidden text-[30px] ml-4 mr-2 cursor-pointer transition-all duration-300"
             onClick={toggleOnMenu}
           />
         </div>

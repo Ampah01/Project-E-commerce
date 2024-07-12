@@ -10,23 +10,14 @@ import Login from "./Components/Login/Login.jsx";
 import Cart from "./Pages/Cart/Cart.jsx";
 import ProceedToCheckout from "./Pages/ProceedToCheckout/ProceedToCheckout.jsx";
 
-export const ThemeContext = createContext();
 export const CartContext = createContext();
 
 function App() {
-  const [theme, setTheme] = useState(() => {
-    return localStorage.getItem("theme") || "light";
-  });
-
   const [showLogin, setShowLogin] = useState(false);
   const [cart, setCart] = useState(() => {
     const storedCart = localStorage.getItem("cart");
     return storedCart ? JSON.parse(storedCart) : [];
   });
-
-  useEffect(() => {
-    localStorage.setItem("theme", theme);
-  }, [theme]);
 
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart));
@@ -45,57 +36,29 @@ function App() {
   };
 
   return (
-    <ThemeContext.Provider value={{ theme, setTheme }}>
-      <CartContext.Provider value={{ cart, setCart }}>
-        <div
-          className={`${theme} ${
-            theme === "dark" ? "bg-[#333] text-white" : "bg-slate-50"
-          } min-h-[100vh]`}
-        >
-          <Login isOpen={showLogin} setShowLogin={setShowLogin} />
-          <Navbar
-            setShowLogin={setShowLogin}
-            getTotalQuantity={getTotalQuantity}
+    <CartContext.Provider value={{ cart, setCart }}>
+      <div className="bg-slate-50 min-h-[100vh]">
+        <Login isOpen={showLogin} setShowLogin={setShowLogin} />
+        <Navbar setShowLogin={setShowLogin} getTotalQuantity={getTotalQuantity} />
+        <Routes>
+          <Route
+            path="/"
+            element={<Home setShowLogin={setShowLogin} getTotalQuantity={getTotalQuantity} />}
           />
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <Home
-                  setShowLogin={setShowLogin}
-                  getTotalQuantity={getTotalQuantity}
-                />
-              }
-            />
-            <Route path="/about" element={<About />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route
-              path="/cart"
-              element={
-                <Cart
-                  cart={cart}
-                  clearCart ={clearCart}
-                  setCart={setCart}
-                  getTotalQuantity={getTotalQuantity}
-                />
-              }
-            />
-            <Route
-              path="/checkout"
-              element={
-                <ProceedToCheckout
-                  cart={cart}
-                  getTotalQuantity={getTotalQuantity}
-                  getTotalPrice={getTotalPrice}
-                  clearCart ={clearCart}
-                />
-              }
-            />
-          </Routes>
-        </div>
-      </CartContext.Provider>
-    </ThemeContext.Provider>
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route
+            path="/cart"
+            element={<Cart cart={cart} clearCart={clearCart} setCart={setCart} getTotalQuantity={getTotalQuantity} />}
+          />
+          <Route
+            path="/checkout"
+            element={<ProceedToCheckout cart={cart} getTotalQuantity={getTotalQuantity} getTotalPrice={getTotalPrice} clearCart={clearCart} />}
+          />
+        </Routes>
+      </div>
+    </CartContext.Provider>
   );
 }
 

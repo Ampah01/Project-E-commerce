@@ -63,7 +63,7 @@ function SneakerList({ sneakers }) {
   }
 
   return (
-    <div className="container mx-auto lg:p-4 p-1">
+    <div id="sneakers" className="container mx-auto lg:p-4 p-1">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         <AnimatePresence>
           {sneakers.map((sneaker) => (

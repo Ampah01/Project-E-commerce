@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -9,13 +10,12 @@ import background_3 from "../../assets/background_3.jpg";
 
 const textVariants = {
   hidden: { opacity: 0, y: 20 },
-  visible: { 
-    opacity: 1, 
+  visible: {
+    opacity: 1,
     y: 0,
-    transition: { delay: 0.3, duration: 0.6 }
-  }
+    transition: { delay: 0.3, duration: 0.6 },
+  },
 };
-
 
 function Header() {
   const settings = {
@@ -36,7 +36,7 @@ function Header() {
       <Slider {...settings}>
         <div
           key="slide1"
-          className="relative h-[80vh] md:h-[50vw] lg:h-[40vw] w-full md:w-4/5  overflow-hidden"
+          className="relative h-[80vh] md:h-[50vw] lg:h-[40vw] w-full md:w-4/5 overflow-hidden"
         >
           <img
             src={background_1}
@@ -44,7 +44,7 @@ function Header() {
             className="object-cover w-full h-full"
           />
           <div className="absolute inset-0 bg-black opacity-75 flex flex-col md:justify-end justify-center items-center text-center text-white p-4">
-            <motion.h1 
+            <motion.h1
               className="text-3xl lg:text-5xl md:text-4xl font-bold tracking-tighter mb-1"
               initial="hidden"
               animate="visible"
@@ -53,7 +53,7 @@ function Header() {
               Get your sneakers at our{" "}
               <span className="text-green-500">kingdom</span>
             </motion.h1>
-            <motion.p 
+            <motion.p
               className="text-lg md:text-xl mb-6 md:w-[50%]"
               initial="hidden"
               animate="visible"
@@ -63,14 +63,20 @@ function Header() {
               sneakers blend technology and design to deliver peak performance
               and everyday elegance. Walk with confidence, run with excellence
             </motion.p>
-            <motion.button 
-              className="px-4 py-2 md:mb-8 bg-green-500 text-white rounded-md hover:bg-green-700 transition-all duration-300"
+            <motion.div
               initial="hidden"
               animate="visible"
               variants={textVariants}
             >
-              View sneakers
-            </motion.button>
+              <Link
+                to="sneakers"
+                smooth={true}
+                duration={500}
+                className="bg-green-500 text-white font-semibold py-2 px-4 rounded hover:bg-green-700 transition duration-300 cursor-pointer"
+              >
+                View sneakers
+              </Link>
+            </motion.div>
           </div>
         </div>
 
@@ -84,7 +90,7 @@ function Header() {
             className="object-cover w-full h-full"
           />
           <div className="absolute inset-0 bg-black opacity-75 flex flex-col md:justify-end justify-center items-center text-center text-white p-4">
-            <motion.h1 
+            <motion.h1
               className="text-3xl lg:text-5xl md:text-4xl font-bold tracking-tighter mb-4"
               initial="hidden"
               animate="visible"
@@ -93,7 +99,7 @@ function Header() {
               Your <span className="text-green-500">Sneaker</span> Journey
               Starts Here
             </motion.h1>
-            <motion.p 
+            <motion.p
               className="text-lg md:text-xl mb-6 md:w-[50%]"
               initial="hidden"
               animate="visible"
@@ -103,14 +109,20 @@ function Header() {
               premium sneakers designed to enhance your performance and elevate
               your look. Comfort and fashion, redefined
             </motion.p>
-            <motion.button 
-              className="px-4 py-2 md:mb-8 bg-green-500 text-white rounded-md hover:bg-green-700 transition-all duration-300"
+            <motion.div
               initial="hidden"
               animate="visible"
               variants={textVariants}
             >
-              View sneakers
-            </motion.button>
+              <Link
+                to="sneakers"
+                smooth={true}
+                duration={500}
+                className="bg-green-500 text-white font-semibold py-2 px-4 rounded hover:bg-green-700 transition duration-300 cursor-pointer"
+              >
+                View sneakers
+              </Link>
+            </motion.div>
           </div>
         </div>
 
@@ -124,7 +136,7 @@ function Header() {
             className="object-cover w-full h-full"
           />
           <div className="absolute inset-0 bg-black opacity-75 flex flex-col md:justify-end justify-center items-center text-center text-white p-4">
-            <motion.h1 
+            <motion.h1
               className="text-3xl lg:text-5xl md:text-4xl font-bold tracking-tighter mb-4"
               initial="hidden"
               animate="visible"
@@ -133,7 +145,7 @@ function Header() {
               Discover Your Perfect{" "}
               <span className="text-green-500">Sneaker</span> Match
             </motion.h1>
-            <motion.p 
+            <motion.p
               className="text-lg md:text-xl mb-6 md:w-[50%]"
               initial="hidden"
               animate="visible"
@@ -144,14 +156,20 @@ function Header() {
               trendsetters alike. Step up your game with unparalleled style and
               comfort
             </motion.p>
-            <motion.button 
-              className="px-4 py-2 md:mb-8 bg-green-500 text-white rounded-md hover:bg-green-700 transition-all duration-300"
+            <motion.div
               initial="hidden"
               animate="visible"
               variants={textVariants}
             >
-              View sneakers
-            </motion.button>
+              <Link
+                to="sneakers"
+                smooth={true}
+                duration={500}
+                className="bg-green-500 text-white font-semibold py-2 px-4 rounded hover:bg-green-700 transition duration-300 cursor-pointer"
+              >
+                View sneakers
+              </Link>
+            </motion.div>
           </div>
         </div>
       </Slider>

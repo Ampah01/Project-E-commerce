@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import SneakerList from "../SneakersLists/SneakerList";
 
-function SneakerCategory({ data, setShowLogin, cart, setCart }) {
+function SneakerCategory({ data, setShowLogin }) {
   function getAllSneakers(categories) {
     return categories.reduce((allSneakers, category) => {
       return allSneakers.concat(category.sneakers);
